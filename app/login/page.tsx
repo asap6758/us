@@ -1,0 +1,22 @@
+import { redirect } from "next/navigation";
+import { currentUser } from "@/lib/auth";
+import { names } from "@/lib/config";
+import { Mark } from "@/components/Mark";
+import { LoginForm } from "@/components/LoginForm";
+
+export default async function LoginPage() {
+  if (await currentUser()) redirect("/");
+  const n = names();
+  return (
+    <main className="login">
+      <div className="mark">
+        <Mark size={44} inline />
+      </div>
+      <h1>
+        <em>us.</em>
+      </h1>
+      <p className="lead">One thing a day. Just for the two of us.</p>
+      <LoginForm names={n} />
+    </main>
+  );
+}
