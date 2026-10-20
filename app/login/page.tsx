@@ -14,7 +14,7 @@ export default async function LoginPage() {
         <Mark size={40} inline />
       </div>
       <h1>us</h1>
-      <p className="lead">One thing a day. Just for the two of us.</p>
+      <p className="lead">One little thing a day, just for us.</p>
       <LoginForm names={n} />
       </div>
     </main>

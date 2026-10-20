@@ -110,7 +110,7 @@ export function Composer({ partner }: { partner: string }) {
         onKeyDown={(e) => {
           if ((e.metaKey || e.ctrlKey) && e.key === "Enter" && canSend) send();
         }}
-        placeholder={photo ? "Add a few words (optional)" : `Something for ${partner}…`}
+        placeholder={photo ? "Add a few words (optional)" : `A little something for ${partner}…`}
         maxLength={2000}
         rows={1}
       />

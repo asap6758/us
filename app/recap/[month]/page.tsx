@@ -54,7 +54,7 @@ export default async function RecapPage({ params }: { params: Promise<{ month: s
               <b>{r.longestStreak}</b>
               <span>longest streak, days</span>
             </div>
-            <div className="stat glass">
+            <div className="stat glass you">
               <b>{r.byAuthor[me].total}</b>
               <span>from you</span>
             </div>

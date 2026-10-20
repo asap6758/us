@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "One thing a day, for the two of us.",
     start_url: "/",
     display: "standalone",
-    background_color: "#f6f3ed",
-    theme_color: "#f6f3ed",
+    background_color: "#fbf2f4",
+    theme_color: "#fbf2f4",
     icons: [
       { src: "/icon", sizes: "512x512", type: "image/png", purpose: "any" },
       { src: "/icon", sizes: "512x512", type: "image/png", purpose: "maskable" },

@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Who } from "@/lib/config";
 import { logout } from "@/app/login/actions";
 import { TzSync } from "./TzSync";
+import { Heart } from "./Heart";
 
 export function Shell({
   active,
@@ -19,7 +20,7 @@ export function Shell({
       <TzSync />
       <header className="top">
         <Link href="/" className="wordmark" aria-label="Today">
-          us
+          us <Heart className="" />
         </Link>
         <nav className="nav">
           <Link href="/" aria-current={active === "today" ? "page" : undefined}>

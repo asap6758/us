@@ -5,9 +5,9 @@ export function Mark({ size = 48, inline = false }: { size?: number; inline?: bo
   const cy = size / 2;
   const cx1 = size / 2 - r * 0.55;
   const cx2 = size / 2 + r * 0.55;
-  const bg = inline ? "none" : "#f6f3ed";
-  const ink = inline ? "currentColor" : "#1c1a17";
-  const clay = "#b8532f";
+  const bg = inline ? "none" : "#fbf2f4";
+  const ink = "#e8497f";
+  const clay = "#ff6f61";
   return (
     <div style={{ display: "flex", width: size, height: size, background: bg, borderRadius: 0 }}>
       <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} xmlns="http://www.w3.org/2000/svg">
