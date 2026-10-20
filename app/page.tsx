@@ -9,7 +9,6 @@ import { Composer } from "@/components/Composer";
 import { EntryCard } from "@/components/EntryCard";
 import { RemoveButton } from "@/components/RemoveButton";
 import { Refresher } from "@/components/Refresher";
-import { Heart } from "@/components/Heart";
 
 export const dynamic = "force-dynamic";
 
@@ -75,14 +74,12 @@ export default async function Today() {
         {theirs ? (
           <EntryCard entry={theirs} who={n[them]} />
         ) : (
-          <p className="empty">Waiting on {n[them]}… <Heart /></p>
+          <p className="empty">Waiting on {n[them]}…</p>
         )}
       </section>
 
       {mine && theirs && (
-        <p className="both">
-          <Heart /> Both of you showed up today. See you tomorrow.
-        </p>
+        <p className="both">Both of you showed up today. See you tomorrow.</p>
       )}
     </Shell>
   );
