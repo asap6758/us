@@ -58,7 +58,7 @@ export default async function Archive({ searchParams }: { searchParams: Promise<
           {count === 0 ? "Nothing here yet" : `${count} ${count === 1 ? "thing" : "things"} · ${days.size} ${days.size === 1 ? "day" : "days"}`}
         </span>
         {count > 0 && (
-          <Link href={`/recap/${month}`} className="pill">
+          <Link href={`/recap/${month}`} className="pill glass">
             {monthName(month)} recap →
           </Link>
         )}
@@ -88,7 +88,7 @@ export default async function Archive({ searchParams }: { searchParams: Promise<
       })}
 
       {months.length > 0 && (
-        <nav className="index">
+        <nav className="index glass">
           <h2>Every month</h2>
           {[...years.entries()].map(([y, list]) => (
             <div className="year" key={y}>

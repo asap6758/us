@@ -39,30 +39,30 @@ export default async function RecapPage({ params }: { params: Promise<{ month: s
       ) : (
         <>
           <div className="stats">
-            <div className="stat">
+            <div className="stat glass">
               <b>
                 {r.daysWithSomething}
                 <small>/{inProgress ? r.daysElapsed : r.daysInMonth}</small>
               </b>
               <span>days with something</span>
             </div>
-            <div className="stat">
+            <div className="stat glass">
               <b>{r.daysBoth}</b>
               <span>days you both showed up</span>
             </div>
-            <div className="stat">
+            <div className="stat glass">
               <b>{r.longestStreak}</b>
               <span>longest streak, days</span>
             </div>
-            <div className="stat">
+            <div className="stat glass">
               <b>{r.byAuthor[me].total}</b>
               <span>from you</span>
             </div>
-            <div className="stat them">
+            <div className="stat glass them">
               <b>{r.byAuthor[them].total}</b>
               <span>from {n[them]}</span>
             </div>
-            <div className="stat">
+            <div className="stat glass">
               <b>
                 {r.photos}
                 <small> + {r.notes}</small>

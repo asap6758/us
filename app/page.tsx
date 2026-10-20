@@ -42,7 +42,7 @@ export default async function Today() {
       </header>
 
       {showRecap && (
-        <Link href={`/recap/${prevMonth}`} className="notice">
+        <Link href={`/recap/${prevMonth}`} className="notice glass">
           <span>
             <strong>{fmtMonth(prevMonth, { year: false })} is in the books.</strong>
             <span className="muted">Your recap is ready.</span>

@@ -9,14 +9,14 @@ export default async function LoginPage() {
   const n = names();
   return (
     <main className="login">
+      <div className="login-card glass">
       <div className="mark">
-        <Mark size={44} inline />
+        <Mark size={40} inline />
       </div>
-      <h1>
-        <em>us.</em>
-      </h1>
+      <h1>us</h1>
       <p className="lead">One thing a day. Just for the two of us.</p>
       <LoginForm names={n} />
+      </div>
     </main>
   );
 }

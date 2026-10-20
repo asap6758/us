@@ -93,7 +93,7 @@ export function Composer({ partner }: { partner: string }) {
   const canSend = !busy && (text.trim().length > 0 || !!photo);
 
   return (
-    <div className="composer">
+    <div className="composer glass">
       {photo && (
         <div className="preview">
           <img src={photo.preview} width={photo.width} height={photo.height} alt="" />

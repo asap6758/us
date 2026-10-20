@@ -2,7 +2,7 @@ import type { Entry } from "@/lib/types";
 import { Photo } from "./Photo";
 
 export function EntryCard({ entry, compact = false, who }: { entry: Entry; compact?: boolean; who: string }) {
-  const cls = `card ${entry.kind === "photo" ? "photo" : "note"}${compact ? " compact" : ""}`;
+  const cls = `card glass ${entry.kind === "photo" ? "photo" : "note"}${compact ? " compact" : ""}`;
   if (entry.kind === "photo" && entry.imageUrl) {
     return (
       <article className={cls}>

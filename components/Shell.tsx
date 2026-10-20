@@ -19,7 +19,7 @@ export function Shell({
       <TzSync />
       <header className="top">
         <Link href="/" className="wordmark" aria-label="Today">
-          us.
+          us
         </Link>
         <nav className="nav">
           <Link href="/" aria-current={active === "today" ? "page" : undefined}>
